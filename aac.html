@@ -71,6 +71,7 @@
 
 </form>
 
+<button id="signupBtn">ثبت‌نام</button>
 
 
 
@@ -103,7 +104,18 @@
 
 
 <script src="../js.js/jssss.js"></script>
+  <script>
+  document.getElementById("signupBtn").addEventListener("click", function() {
+    gtag("event", "signup_click", {  // نام Event
+      button_id: "signupBtn",       // شناسه دکمه
+      page_location: window.location.href
+    });
+    alert("کلیک ثبت شد!");  // فقط برای تست
+  });
+</script>
+
 </body>
 
 
 </html>
+
